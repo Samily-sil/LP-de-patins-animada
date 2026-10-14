@@ -33,6 +33,47 @@ section.hero {
     display: block;
     animation: slideUp 6s infinite ease;
   }
+
+  /* buttons */
+  & .buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    & .button {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      border-radius: 5rem;
+
+      transition: scale 350ms;
+
+      &.buy {
+        padding: 1.5rem 3rem;
+        background-color: var(--snitap-sun);
+      }
+
+      &.play span {
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+
+    & .shadow {
+      box-shadow:
+        0 2px 5px rgb(0 0 0 / .1),
+        0 9px 9px rgb(0 0 0 / 0.9),
+        0 20px 12px rgb(0 0 0 / 0.5),
+        0 36px 15px rgb(0 0 0 / 0.1);
+    }
+  }
 }
 
 @keyframes slideUp {
@@ -63,48 +104,48 @@ section.hero {
   55% {
     transform: translateY(-5rem);
   }
- /* saudavel in */
+  /* saudavel in */
 
-    56% {
-        transform: translateY(calc(-10rem - 15px));
-    }
+  56% {
+    transform: translateY(calc(-10rem - 15px));
+  }
 
-    58% {
-        transform: translateY(calc(-10rem + 10px));
-    }
+  58% {
+    transform: translateY(calc(-10rem + 10px));
+  }
 
-    60% {
-        transform: translateY(calc(-10rem - 5px));
-    }
+  60% {
+    transform: translateY(calc(-10rem - 5px));
+  }
 
-    62% {
-        transform: translateY(calc(-10rem + 5px));
-    }
+  62% {
+    transform: translateY(calc(-10rem + 5px));
+  }
 
-    /* saudavel static */
+  /* saudavel static */
   66%,
   88% {
     transform: translateY(-10rem);
   }
-    /* pratico in */
+  /* pratico in */
 
-    89% {
-        transform: translateY(calc(-15rem - 15px));
-    }
+  89% {
+    transform: translateY(calc(-15rem - 15px));
+  }
 
-    91% {
-        transform: translateY(calc(-15rem + 10px));
-    }
+  91% {
+    transform: translateY(calc(-15rem + 10px));
+  }
 
-    93% {
-        transform: translateY(calc(-15rem - 5px));
-    }
+  93% {
+    transform: translateY(calc(-15rem - 5px));
+  }
 
-    95% {
-        transform: translateY(calc(-15rem + 5px));
-    }
+  95% {
+    transform: translateY(calc(-15rem + 5px));
+  }
 
-    /* pratico static */
+  /* pratico static */
   100% {
     transform: translateY(-15rem);
   }
